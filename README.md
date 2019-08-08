@@ -12,4 +12,4 @@ This dashboard can be filtered using management zones or optional tagging rules.
 
 
 ### Load Test Analysis Dashboard
-![Load Test Analysis](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Sample%20Images/Load%20Test%20Analysis.png
+![Load Test Analysis](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Sample%20Images/Load%20Test%20Analysis.png)
