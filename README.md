@@ -4,6 +4,11 @@ This repository contains JSON files used to populate dashboards via API call.
 
 Dynatrace API Docs: https://www.dynatrace.com/support/help/shortlink/section-api
 
+### Monitoring Overview Dashboard
+![Monitoring Overview](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Sample%20Images/Monitoring%20Overview.png)
+
+A high-level monitoring dashboard containing a wide variety of metrics. The dashboard is designed to mimic a transaction flow from User -> Application Services/Infrastructure -> Database.
+
 
 ### Service Health Dashboard
 ![Service Health](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Sample%20Images/Service%20Health.png)
