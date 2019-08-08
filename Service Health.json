@@ -1,0 +1,1215 @@
+{
+    "metadata": {
+        "configurationVersions": [
+            2
+        ],
+        "clusterVersion": "1.174.142.20190807-064832"
+    },
+    "id": "ad45acc3-9667-4d8b-b371-b3975961c7ae",
+    "dashboardMetadata": {
+        "name": "Service Health",
+        "shared": false,
+        "owner": "nathan.bullinger@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": "l_30_MINUTES",
+            "managementZone": null
+        }
+    },
+    "tiles": [
+        {
+            "name": "Service health",
+            "tileType": "SERVICES",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 0,
+                "width": 266,
+                "height": 190
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": null,
+            "chartVisible": true
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 342,
+                "left": 1102,
+                "width": 532,
+                "height": 418
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Failure rate (any  errors) - Web services",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.errors.total.rate",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "2"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 1102,
+                "width": 532,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Failure rate (any  errors) - Web services",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:service.errors.total.rate",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "2"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 1634,
+                "width": 532,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Failure rate (any  errors) - Custom services",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:service.errors.total.rate",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "4"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 342,
+                "left": 1634,
+                "width": 532,
+                "height": 418
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Failure rate (any  errors) - Custom services",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.errors.total.rate",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "AUTO_TAGS": [
+                            "Environment⁈‼⁉PRD"
+                        ],
+                        "SERVICE_TYPE": [
+                            "4"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 570,
+                "width": 532,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Failure rate (any errors) - Web request services",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:service.errors.total.rate",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "1"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 342,
+                "left": 570,
+                "width": 532,
+                "height": 418
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Failure rate (any  errors) - Web request services",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.errors.total.rate",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "1"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 2166,
+                "width": 532,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Failure rate (any  errors) - Messaging services",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:service.errors.total.rate",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "6"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 342,
+                "left": 2166,
+                "width": 532,
+                "height": 418
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Failure rate (any  errors) - Messaging services",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.errors.total.rate",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "6"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 836,
+                "left": 1102,
+                "width": 532,
+                "height": 266
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Avg Response time - Web services",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:service.response.time",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "2"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 836,
+                "left": 570,
+                "width": 532,
+                "height": 266
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Avg Response time - Web request services",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:service.response.time",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "1"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 836,
+                "left": 1634,
+                "width": 532,
+                "height": 266
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Avg Response time - Custom services",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:service.response.time",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "4"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 1102,
+                "left": 1102,
+                "width": 532,
+                "height": 266
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Avg Response time - Web services",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.response.time",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "2"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 1102,
+                "left": 570,
+                "width": 532,
+                "height": 266
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Avg Response time - Web request services",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.response.time",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "1"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 1102,
+                "left": 1634,
+                "width": 532,
+                "height": 266
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Avg Response time - Custom services",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.response.time",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "4"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 1102,
+                "left": 2166,
+                "width": 266,
+                "height": 266
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Failed connections - Databases",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.dbconnections.failure",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "3"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 836,
+                "left": 2166,
+                "width": 266,
+                "height": 266
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Failed connections - Databases",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:service.dbconnections.failure",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "3"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Failure Rate - Web Services",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 1102,
+                "width": 532,
+                "height": 38
+            },
+            "tileFilter": {
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Average Response Time - Web Services",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 798,
+                "left": 1102,
+                "width": 532,
+                "height": 38
+            },
+            "tileFilter": {
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Failure Rate - Web Request Services",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 570,
+                "width": 532,
+                "height": 38
+            },
+            "tileFilter": {
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Failure Rate - Custom Services",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 1634,
+                "width": 532,
+                "height": 38
+            },
+            "tileFilter": {
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Average Response Time - Web Request Services",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 798,
+                "left": 570,
+                "width": 532,
+                "height": 38
+            },
+            "tileFilter": {
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Average Response Time - Custom Services",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 798,
+                "left": 1634,
+                "width": 532,
+                "height": 38
+            },
+            "tileFilter": {
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Databases",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 798,
+                "left": 2166,
+                "width": 532,
+                "height": 38
+            },
+            "tileFilter": {
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 836,
+                "left": 2432,
+                "width": 266,
+                "height": 266
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Avg Response time - Databases",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:service.response.time",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "3"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 1102,
+                "left": 2432,
+                "width": 266,
+                "height": 266
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Avg Response time - Databases",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.response.time",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "3"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Service Health",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 0,
+                "width": 190,
+                "height": 38
+            },
+            "tileFilter": {
+                "managementZone": null
+            }
+        },
+        {
+            "name": "",
+            "tileType": "SERVICES",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 266,
+                "width": 266,
+                "height": 190
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "SERVICE",
+                "customName": "Impacted Services",
+                "defaultName": "Impacted Services",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "PROBLEM_IMPACT": [
+                            "true"
+                        ]
+                    }
+                }
+            },
+            "chartVisible": true
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 684,
+                "left": 0,
+                "width": 266,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Number of errors",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.errors.total.count",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 1064,
+                "left": 266,
+                "width": 266,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "99th% Response time",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.response.time",
+                            "aggregation": "PERCENTILE",
+                            "percentile": 99,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 684,
+                "left": 266,
+                "width": 266,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Number of HTTP 5xx errors",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.errors.fivexx.count",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 304,
+                "left": 0,
+                "width": 266,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Request Count",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.requestCount.total",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Messaging Services",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 4,
+                "left": 2159,
+                "width": 304,
+                "height": 38
+            },
+            "tileFilter": {
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 1064,
+                "left": 0,
+                "width": 266,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Max Response time",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.response.time",
+                            "aggregation": "MAX",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "High Volume Services",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 255,
+                "left": -5,
+                "width": 304,
+                "height": 38
+            },
+            "tileFilter": {
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 304,
+                "left": 266,
+                "width": 266,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Number of calls without  any errors",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.errors.total.successCount",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Failing Services",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 646,
+                "left": 0,
+                "width": 304,
+                "height": 38
+            },
+            "tileFilter": {
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Slowest Services",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 1026,
+                "left": 0,
+                "width": 304,
+                "height": 38
+            },
+            "tileFilter": {
+                "managementZone": null
+            }
+        }
+    ]
+}
