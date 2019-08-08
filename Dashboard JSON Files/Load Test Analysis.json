@@ -16,10 +16,7 @@
         },
         "dashboardFilter": {
             "timeframe": "l_30_MINUTES",
-            "managementZone": {
-                "id": "-7863265775731943935",
-                "name": "Phoenix"
-            }
+            "managementZone": null
         }
     },
     "tiles": [
