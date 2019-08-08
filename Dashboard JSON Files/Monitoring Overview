@@ -1,0 +1,1437 @@
+{
+    "metadata": {
+        "configurationVersions": [
+            2
+        ],
+        "clusterVersion": "1.174.142.20190807-064832"
+    },
+    "id": "cb04e236-dce0-47b1-b712-7154b08f0cda",
+    "dashboardMetadata": {
+        "name": "Monitoring Overview",
+        "shared": false,
+        "owner": "nathan.bullinger@dynatrace.com",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": "l_2_HOURS",
+            "managementZone": null
+        }
+    },
+    "tiles": [
+        {
+            "name": "Applications",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 190,
+                "width": 304,
+                "height": 38
+            },
+            "tileFilter": {
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Databases",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 2394,
+                "width": 304,
+                "height": 38
+            },
+            "tileFilter": {
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Problems",
+            "tileType": "OPEN_PROBLEMS",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 0,
+                "width": 152,
+                "height": 152
+            },
+            "tileFilter": {
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Top web applications",
+            "tileType": "APPLICATIONS_MOST_ACTIVE",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 494,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Application health",
+            "tileType": "APPLICATIONS",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 190,
+                "width": 304,
+                "height": 152
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": null,
+            "chartVisible": true
+        },
+        {
+            "name": "World map",
+            "tileType": "APPLICATION_WORLDMAP",
+            "configured": true,
+            "bounds": {
+                "top": 342,
+                "left": 190,
+                "width": 380,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "assignedEntities": [],
+            "metric": "APDEX"
+        },
+        {
+            "name": "Live user activity",
+            "tileType": "UEM_ACTIVE_SESSIONS",
+            "configured": true,
+            "bounds": {
+                "top": 646,
+                "left": 190,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Services",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 836,
+                "width": 304,
+                "height": 38
+            },
+            "tileFilter": {
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Infrastructure",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 1634,
+                "width": 304,
+                "height": 38
+            },
+            "tileFilter": {
+                "managementZone": null
+            }
+        },
+        {
+            "name": "",
+            "tileType": "SERVICES",
+            "configured": true,
+            "bounds": {
+                "top": 342,
+                "left": 0,
+                "width": 152,
+                "height": 152
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "SERVICE",
+                "customName": "Impacted Services",
+                "defaultName": "Impacted Services",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "PROBLEM_IMPACT": [
+                            "true"
+                        ]
+                    }
+                }
+            },
+            "chartVisible": true
+        },
+        {
+            "name": "",
+            "tileType": "HOSTS",
+            "configured": true,
+            "bounds": {
+                "top": 190,
+                "left": 0,
+                "width": 152,
+                "height": 152
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "HOST",
+                "customName": "Impacted Hosts",
+                "defaultName": "Impacted Hosts",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "HOST": {
+                        "PROBLEM_IMPACT": [
+                            "true"
+                        ]
+                    }
+                }
+            },
+            "chartVisible": true
+        },
+        {
+            "name": "",
+            "tileType": "DATABASES_OVERVIEW",
+            "configured": true,
+            "bounds": {
+                "top": 494,
+                "left": 0,
+                "width": 152,
+                "height": 152
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "DATABASE",
+                "customName": "Impacted Databases",
+                "defaultName": "Impacted Databases",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "DATABASE": {
+                        "PROBLEM_IMPACT": [
+                            "true"
+                        ]
+                    }
+                }
+            },
+            "chartVisible": true
+        },
+        {
+            "name": "Problems",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 0,
+                "width": 152,
+                "height": 38
+            },
+            "tileFilter": {
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Database health",
+            "tileType": "DATABASES_OVERVIEW",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 2394,
+                "width": 304,
+                "height": 152
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": null,
+            "chartVisible": true
+        },
+        {
+            "name": "Host health",
+            "tileType": "HOSTS",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 1634,
+                "width": 266,
+                "height": 152
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": null,
+            "chartVisible": true
+        },
+        {
+            "name": "Network metrics",
+            "tileType": "NETWORK",
+            "configured": true,
+            "bounds": {
+                "top": 1102,
+                "left": 2394,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Network status",
+            "tileType": "NETWORK_MEDIUM",
+            "configured": true,
+            "bounds": {
+                "top": 950,
+                "left": 2394,
+                "width": 304,
+                "height": 152
+            },
+            "tileFilter": {
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Synthetic monitor health",
+            "tileType": "SYNTHETIC_TESTS",
+            "configured": true,
+            "bounds": {
+                "top": 190,
+                "left": 190,
+                "width": 304,
+                "height": 152
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": null,
+            "chartVisible": true
+        },
+        {
+            "name": "Service health",
+            "tileType": "SERVICES",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 836,
+                "width": 304,
+                "height": 152
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": null,
+            "chartVisible": true
+        },
+        {
+            "name": "Most used 3rd parties",
+            "tileType": "THIRD_PARTY_MOST_ACTIVE",
+            "configured": true,
+            "bounds": {
+                "top": 646,
+                "left": 494,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "assignedEntities": [],
+            "metric": null
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 570,
+                "left": 836,
+                "width": 456,
+                "height": 266
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Failure rate (any  errors)",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:service.errors.total.rate",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 570,
+                "left": 1292,
+                "width": 304,
+                "height": 266
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Failure rate (any  errors)",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.errors.total.rate",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 228,
+                "left": 836,
+                "width": 456,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Request count",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:service.requestCount.total",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "BAR",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 228,
+                "left": 1292,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Request count",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.requestCount.total",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 494,
+                "left": 2052,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Memory used %",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:host.mem.usage",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "HOST",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 494,
+                "left": 1634,
+                "width": 418,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Memory used %",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:host.mem.usage",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "HOST",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Markdown",
+            "tileType": "MARKDOWN",
+            "configured": true,
+            "bounds": {
+                "top": 684,
+                "left": 0,
+                "width": 190,
+                "height": 266
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "markdown": "##Dashboards\n\n\n[Host Health](https://dynatrace.com)\n\n[Service Health](https://dynatrace.com)\n"
+        },
+        {
+            "name": "Markdown",
+            "tileType": "MARKDOWN",
+            "configured": true,
+            "bounds": {
+                "top": 988,
+                "left": 0,
+                "width": 190,
+                "height": 266
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "markdown": "##Helpful links\n[Dynatrace Homepage](https://dynatrace.com)\n\n[Dynatrace Documentation](https://www.dynatrace.com/support/doc/#)\n\n[DT API Documentation](https://www.dynatrace.com/support/help/shortlink/section-api)\n\n[Supported technologies](https://www.dynatrace.com/support/help/shortlink/supported-technologies)\n\n[OneAgent Support Matrix](https://www.dynatrace.com/support/help/shortlink/oneagent-support-matrix)\n\n[Release Notes](https://www.dynatrace.com/support/help/shortlink/release_notes)"
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 950,
+                "left": 190,
+                "width": 380,
+                "height": 228
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Average Load Action Duration",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:apps.web.actionDuration.load.browser",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "APPLICATION",
+                            "dimensions": [
+                                {
+                                    "id": "1",
+                                    "values": [],
+                                    "usedForSplitting": false,
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 950,
+                "left": 570,
+                "width": 228,
+                "height": 228
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Average Load Action Duration",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:apps.web.actionDuration.load.browser",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "APPLICATION",
+                            "dimensions": [
+                                {
+                                    "id": "1",
+                                    "values": [],
+                                    "usedForSplitting": false,
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 874,
+                "left": 836,
+                "width": 456,
+                "height": 266
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Average response time",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:service.response.time",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 874,
+                "left": 1292,
+                "width": 304,
+                "height": 266
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Average response time",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.response.time",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 190,
+                "left": 1634,
+                "width": 418,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "CPU usage %",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:host.cpu.usage",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "HOST",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 190,
+                "left": 2052,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "CPU usage %",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:host.cpu.usage",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "HOST",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Network",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 912,
+                "left": 2394,
+                "width": 304,
+                "height": 38
+            },
+            "tileFilter": {
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 646,
+                "left": 2394,
+                "width": 304,
+                "height": 228
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Connection failure rate",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.dbconnections.failureRate",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 418,
+                "left": 2394,
+                "width": 304,
+                "height": 228
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Failed connections",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.dbconnections.failure",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 190,
+                "left": 2394,
+                "width": 304,
+                "height": 228
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Slowest Databases - 99th% RT",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.response.time",
+                            "aggregation": "PERCENTILE",
+                            "percentile": 99,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "3"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 1178,
+                "left": 190,
+                "width": 380,
+                "height": 228
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Average XHR Action Duration",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:apps.web.actionDuration.xhr.browser",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "APPLICATION",
+                            "dimensions": [
+                                {
+                                    "id": "1",
+                                    "values": [],
+                                    "usedForSplitting": false,
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 1178,
+                "left": 570,
+                "width": 228,
+                "height": 228
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Average XHR Action Duration",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:apps.web.actionDuration.xhr.browser",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "APPLICATION",
+                            "dimensions": [
+                                {
+                                    "id": "1",
+                                    "values": [],
+                                    "usedForSplitting": false,
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "User Sessions Query",
+            "tileType": "DTAQL",
+            "configured": true,
+            "bounds": {
+                "top": 342,
+                "left": 570,
+                "width": 228,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "customName": "5 Slowest Locations",
+            "query": "SELECT usersession.city AS 'City', AVG(useraction.duration) AS \"Duration (ms)\" FROM usersession WHERE NOT usersession.city=NULL AND usersession.country=\"United States\" GROUP BY usersession.city ORDER BY AVG(useraction.duration) DESC LIMIT 5",
+            "type": "TABLE"
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 798,
+                "left": 1634,
+                "width": 418,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Disk available %",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:host.disk.free",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "HOST",
+                            "dimensions": [
+                                {
+                                    "id": "1",
+                                    "values": [],
+                                    "usedForSplitting": false,
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 798,
+                "left": 2052,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Disk available %",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:host.disk.free",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "HOST",
+                            "dimensions": [
+                                {
+                                    "id": "1",
+                                    "values": [],
+                                    "usedForSplitting": false,
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 1102,
+                "left": 1634,
+                "width": 418,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Garbage collection total collection time",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:tech.jvm.memory.gc.collectionTime",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "PROCESS_GROUP_INSTANCE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 1102,
+                "left": 2052,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Garbage collection total collection time",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:tech.jvm.memory.gc.collectionTime",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "PROCESS_GROUP_INSTANCE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 1140,
+                "left": 836,
+                "width": 456,
+                "height": 266
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "99th% response time",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:service.response.time",
+                            "aggregation": "PERCENTILE",
+                            "percentile": 99,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 1140,
+                "left": 1292,
+                "width": 304,
+                "height": 266
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "99th% response time",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.response.time",
+                            "aggregation": "PERCENTILE",
+                            "percentile": 99,
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "",
+            "tileType": "SERVICES",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 1368,
+                "width": 228,
+                "height": 152
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "SERVICE",
+                "customName": "3rd Party Services",
+                "defaultName": "3rd Party Services",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_EXTERNAL_DEPENDENCY": [
+                            "THIRDPARTY"
+                        ]
+                    }
+                }
+            },
+            "chartVisible": true
+        },
+        {
+            "name": "",
+            "tileType": "SERVICES",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 1140,
+                "width": 228,
+                "height": 152
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "SERVICE",
+                "customName": "Java Services",
+                "defaultName": "Java Services",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_SOFTWARE_TECH": [
+                            "JAVA"
+                        ]
+                    }
+                }
+            },
+            "chartVisible": true
+        },
+        {
+            "name": "",
+            "tileType": "HOSTS",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 1900,
+                "width": 228,
+                "height": 152
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "HOST",
+                "customName": "Windows Hosts",
+                "defaultName": "Windows Hosts",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "HOST": {
+                        "HOST_OPERATING_SYSTEM": [
+                            "1"
+                        ]
+                    }
+                }
+            },
+            "chartVisible": true
+        },
+        {
+            "name": "",
+            "tileType": "HOSTS",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 2128,
+                "width": 228,
+                "height": 152
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "HOST",
+                "customName": "Linux Hosts",
+                "defaultName": "Linux Hosts",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "HOST": {
+                        "HOST_OPERATING_SYSTEM": [
+                            "2"
+                        ]
+                    }
+                }
+            },
+            "chartVisible": true
+        }
+    ]
+}
