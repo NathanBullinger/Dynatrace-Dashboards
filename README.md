@@ -1,6 +1,6 @@
 # Dynatrace Dashboards
 
-This repository contains JSON files used to populate dashboards via API call. 
+This repository contains JSON files used to populate dashboards via API call. All of the dashboards within this repository are intended to be uploadable with no additional configuration required.
 
 Dynatrace API Docs: https://www.dynatrace.com/support/help/shortlink/section-api
 
