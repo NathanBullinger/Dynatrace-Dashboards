@@ -5,11 +5,9 @@
         ],
         "clusterVersion": "1.174.142.20190807-064832"
     },
-    "id": "ad45acc3-9667-4d8b-b371-b3975961c7ae",
     "dashboardMetadata": {
         "name": "Service Health",
         "shared": false,
-        "owner": "nathan.bullinger@dynatrace.com",
         "sharingDetails": {
             "linkShared": true,
             "published": false
