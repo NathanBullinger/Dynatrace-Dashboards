@@ -5,11 +5,9 @@
         ],
         "clusterVersion": "1.174.142.20190807-064832"
     },
-    "id": "cb04e236-dce0-47b1-b712-7154b08f0cda",
     "dashboardMetadata": {
         "name": "Monitoring Overview",
         "shared": false,
-        "owner": "nathan.bullinger@dynatrace.com",
         "sharingDetails": {
             "linkShared": true,
             "published": false
