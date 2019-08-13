@@ -5,11 +5,9 @@
         ],
         "clusterVersion": "1.174.142.20190807-064832"
     },
-    "id": "6aaf8b3f-d71d-414e-8f12-ec0a97f8ac8e",
     "dashboardMetadata": {
         "name": "Load Test Analysis",
         "shared": false,
-        "owner": "nathan.bullinger@dynatrace.com",
         "sharingDetails": {
             "linkShared": true,
             "published": false
