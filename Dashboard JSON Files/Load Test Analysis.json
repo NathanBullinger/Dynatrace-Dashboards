@@ -1,640 +1,648 @@
 {
     "metadata": {
-        "configurationVersions": [
-            2
-        ],
-        "clusterVersion": "1.174.142.20190807-064832"
+        "configurationVersions": [1],
+        "clusterVersion": ""
     },
+    "id": "",
     "dashboardMetadata": {
         "name": "Load Test Analysis",
         "shared": false,
+        "owner": "",
         "sharingDetails": {
             "linkShared": true,
             "published": false
         },
         "dashboardFilter": {
-            "timeframe": "l_30_MINUTES",
-            "managementZone": null
+            "timeframe": ""
         }
     },
-    "tiles": [
-        {
-            "name": "Custom chart",
-            "tileType": "CUSTOM_CHARTING",
-            "configured": true,
-            "bounds": {
-                "top": 38,
-                "left": 0,
-                "width": 1558,
-                "height": 304
-            },
-            "tileFilter": {
-                "managementZone": null
-            },
-            "filterConfig": {
-                "type": "MIXED",
-                "customName": "Request count",
-                "defaultName": "Custom chart",
-                "chartConfig": {
-                    "type": "TIMESERIES",
-                    "series": [
-                        {
-                            "metric": "builtin:service.requestCount.total",
-                            "aggregation": "NONE",
-                            "percentile": null,
-                            "type": "BAR",
-                            "entityType": "SERVICE",
-                            "dimensions": [],
-                            "sortAscending": false,
-                            "sortColumn": true
-                        }
-                    ],
-                    "resultMetadata": {}
-                },
-                "filtersPerEntityType": {}
-            }
+    "tiles": [{
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 1140,
+            "height": 380
         },
-        {
-            "name": "Custom chart",
-            "tileType": "CUSTOM_CHARTING",
-            "configured": true,
-            "bounds": {
-                "top": 38,
-                "left": 1558,
-                "width": 380,
-                "height": 304
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Request count",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:service.requestCount.total",
+                    "aggregation": "NONE",
+                    "type": "BAR",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
             },
-            "tileFilter": {
-                "managementZone": null
-            },
-            "filterConfig": {
-                "type": "MIXED",
-                "customName": "Request count",
-                "defaultName": "Custom chart",
-                "chartConfig": {
-                    "type": "TOP_LIST",
-                    "series": [
-                        {
-                            "metric": "builtin:service.requestCount.total",
-                            "aggregation": "NONE",
-                            "percentile": null,
-                            "type": "LINE",
-                            "entityType": "SERVICE",
-                            "dimensions": [],
-                            "sortAscending": false,
-                            "sortColumn": true
-                        }
-                    ],
-                    "resultMetadata": {}
-                },
-                "filtersPerEntityType": {}
-            }
-        },
-        {
-            "name": "Custom chart",
-            "tileType": "CUSTOM_CHARTING",
-            "configured": true,
-            "bounds": {
-                "top": 418,
-                "left": 1938,
-                "width": 380,
-                "height": 304
-            },
-            "tileFilter": {
-                "managementZone": null
-            },
-            "filterConfig": {
-                "type": "MIXED",
-                "customName": "Number of any errors",
-                "defaultName": "Custom chart",
-                "chartConfig": {
-                    "type": "TOP_LIST",
-                    "series": [
-                        {
-                            "metric": "builtin:service.errors.total.count",
-                            "aggregation": "NONE",
-                            "percentile": null,
-                            "type": "LINE",
-                            "entityType": "SERVICE",
-                            "dimensions": [],
-                            "sortAscending": false,
-                            "sortColumn": true
-                        }
-                    ],
-                    "resultMetadata": {}
-                },
-                "filtersPerEntityType": {}
-            }
-        },
-        {
-            "name": "Custom chart",
-            "tileType": "CUSTOM_CHARTING",
-            "configured": true,
-            "bounds": {
-                "top": 418,
-                "left": 0,
-                "width": 1558,
-                "height": 304
-            },
-            "tileFilter": {
-                "managementZone": null
-            },
-            "filterConfig": {
-                "type": "MIXED",
-                "customName": "Number of any errors",
-                "defaultName": "Custom chart",
-                "chartConfig": {
-                    "type": "TIMESERIES",
-                    "series": [
-                        {
-                            "metric": "builtin:service.errors.total.count",
-                            "aggregation": "NONE",
-                            "percentile": null,
-                            "type": "LINE",
-                            "entityType": "SERVICE",
-                            "dimensions": [],
-                            "sortAscending": false,
-                            "sortColumn": true
-                        }
-                    ],
-                    "resultMetadata": {}
-                },
-                "filtersPerEntityType": {}
-            }
-        },
-        {
-            "name": "Custom chart",
-            "tileType": "CUSTOM_CHARTING",
-            "configured": true,
-            "bounds": {
-                "top": 798,
-                "left": 0,
-                "width": 1558,
-                "height": 304
-            },
-            "tileFilter": {
-                "managementZone": null
-            },
-            "filterConfig": {
-                "type": "MIXED",
-                "customName": "Average Response time",
-                "defaultName": "Custom chart",
-                "chartConfig": {
-                    "type": "TIMESERIES",
-                    "series": [
-                        {
-                            "metric": "builtin:service.response.time",
-                            "aggregation": "AVG",
-                            "percentile": null,
-                            "type": "LINE",
-                            "entityType": "SERVICE",
-                            "dimensions": [],
-                            "sortAscending": false,
-                            "sortColumn": true
-                        }
-                    ],
-                    "resultMetadata": {}
-                },
-                "filtersPerEntityType": {}
-            }
-        },
-        {
-            "name": "Custom chart",
-            "tileType": "CUSTOM_CHARTING",
-            "configured": true,
-            "bounds": {
-                "top": 798,
-                "left": 1558,
-                "width": 380,
-                "height": 304
-            },
-            "tileFilter": {
-                "managementZone": null
-            },
-            "filterConfig": {
-                "type": "MIXED",
-                "customName": "Average Response time",
-                "defaultName": "Custom chart",
-                "chartConfig": {
-                    "type": "TOP_LIST",
-                    "series": [
-                        {
-                            "metric": "builtin:service.response.time",
-                            "aggregation": "AVG",
-                            "percentile": null,
-                            "type": "LINE",
-                            "entityType": "SERVICE",
-                            "dimensions": [],
-                            "sortAscending": false,
-                            "sortColumn": true
-                        }
-                    ],
-                    "resultMetadata": {}
-                },
-                "filtersPerEntityType": {}
-            }
-        },
-        {
-            "name": "Custom chart",
-            "tileType": "CUSTOM_CHARTING",
-            "configured": true,
-            "bounds": {
-                "top": 38,
-                "left": 1938,
-                "width": 380,
-                "height": 304
-            },
-            "tileFilter": {
-                "managementZone": null
-            },
-            "filterConfig": {
-                "type": "MIXED",
-                "customName": "Number of calls without  any errors",
-                "defaultName": "Custom chart",
-                "chartConfig": {
-                    "type": "TOP_LIST",
-                    "series": [
-                        {
-                            "metric": "builtin:service.errors.total.successCount",
-                            "aggregation": "NONE",
-                            "percentile": null,
-                            "type": "LINE",
-                            "entityType": "SERVICE",
-                            "dimensions": [],
-                            "sortAscending": false,
-                            "sortColumn": true
-                        }
-                    ],
-                    "resultMetadata": {}
-                },
-                "filtersPerEntityType": {}
-            }
-        },
-        {
-            "name": "Custom chart",
-            "tileType": "CUSTOM_CHARTING",
-            "configured": true,
-            "bounds": {
-                "top": 418,
-                "left": 1558,
-                "width": 380,
-                "height": 304
-            },
-            "tileFilter": {
-                "managementZone": null
-            },
-            "filterConfig": {
-                "type": "MIXED",
-                "customName": "Failure rate (any  errors)",
-                "defaultName": "Custom chart",
-                "chartConfig": {
-                    "type": "TOP_LIST",
-                    "series": [
-                        {
-                            "metric": "builtin:service.errors.total.rate",
-                            "aggregation": "AVG",
-                            "percentile": null,
-                            "type": "LINE",
-                            "entityType": "SERVICE",
-                            "dimensions": [],
-                            "sortAscending": false,
-                            "sortColumn": true
-                        }
-                    ],
-                    "resultMetadata": {}
-                },
-                "filtersPerEntityType": {}
-            }
-        },
-        {
-            "name": "Custom chart",
-            "tileType": "CUSTOM_CHARTING",
-            "configured": true,
-            "bounds": {
-                "top": 798,
-                "left": 1938,
-                "width": 380,
-                "height": 304
-            },
-            "tileFilter": {
-                "managementZone": null
-            },
-            "filterConfig": {
-                "type": "MIXED",
-                "customName": "Average Server side response time",
-                "defaultName": "Custom chart",
-                "chartConfig": {
-                    "type": "TOP_LIST",
-                    "series": [
-                        {
-                            "metric": "builtin:service.response.server",
-                            "aggregation": "AVG",
-                            "percentile": null,
-                            "type": "LINE",
-                            "entityType": "SERVICE",
-                            "dimensions": [],
-                            "sortAscending": false,
-                            "sortColumn": true
-                        }
-                    ],
-                    "resultMetadata": {}
-                },
-                "filtersPerEntityType": {}
-            }
-        },
-        {
-            "name": "Volume",
-            "tileType": "HEADER",
-            "configured": true,
-            "bounds": {
-                "top": 2,
-                "left": 17,
-                "width": 304,
-                "height": 38
-            },
-            "tileFilter": {
-                "managementZone": null
-            }
-        },
-        {
-            "name": "Errors",
-            "tileType": "HEADER",
-            "configured": true,
-            "bounds": {
-                "top": 380,
-                "left": 0,
-                "width": 304,
-                "height": 38
-            },
-            "tileFilter": {
-                "managementZone": null
-            }
-        },
-        {
-            "name": "Response Time",
-            "tileType": "HEADER",
-            "configured": true,
-            "bounds": {
-                "top": 760,
-                "left": 0,
-                "width": 304,
-                "height": 38
-            },
-            "tileFilter": {
-                "managementZone": null
-            }
-        },
-        {
-            "name": "Custom chart",
-            "tileType": "CUSTOM_CHARTING",
-            "configured": true,
-            "bounds": {
-                "top": 1102,
-                "left": 0,
-                "width": 1558,
-                "height": 304
-            },
-            "tileFilter": {
-                "managementZone": null
-            },
-            "filterConfig": {
-                "type": "MIXED",
-                "customName": "99th% Response time",
-                "defaultName": "Custom chart",
-                "chartConfig": {
-                    "type": "TIMESERIES",
-                    "series": [
-                        {
-                            "metric": "builtin:service.response.time",
-                            "aggregation": "PERCENTILE",
-                            "percentile": 99,
-                            "type": "LINE",
-                            "entityType": "SERVICE",
-                            "dimensions": [],
-                            "sortAscending": false,
-                            "sortColumn": true
-                        }
-                    ],
-                    "resultMetadata": {}
-                },
-                "filtersPerEntityType": {}
-            }
-        },
-        {
-            "name": "Custom chart",
-            "tileType": "CUSTOM_CHARTING",
-            "configured": true,
-            "bounds": {
-                "top": 1102,
-                "left": 1558,
-                "width": 380,
-                "height": 304
-            },
-            "tileFilter": {
-                "managementZone": null
-            },
-            "filterConfig": {
-                "type": "MIXED",
-                "customName": "99th% Response time",
-                "defaultName": "Custom chart",
-                "chartConfig": {
-                    "type": "TOP_LIST",
-                    "series": [
-                        {
-                            "metric": "builtin:service.response.time",
-                            "aggregation": "AVG",
-                            "percentile": null,
-                            "type": "LINE",
-                            "entityType": "SERVICE",
-                            "dimensions": [],
-                            "sortAscending": false,
-                            "sortColumn": true
-                        }
-                    ],
-                    "resultMetadata": {}
-                },
-                "filtersPerEntityType": {}
-            }
-        },
-        {
-            "name": "Custom chart",
-            "tileType": "CUSTOM_CHARTING",
-            "configured": true,
-            "bounds": {
-                "top": 1102,
-                "left": 1938,
-                "width": 380,
-                "height": 304
-            },
-            "tileFilter": {
-                "managementZone": null
-            },
-            "filterConfig": {
-                "type": "MIXED",
-                "customName": "99th% Server side response time",
-                "defaultName": "Custom chart",
-                "chartConfig": {
-                    "type": "TOP_LIST",
-                    "series": [
-                        {
-                            "metric": "builtin:service.response.server",
-                            "aggregation": "PERCENTILE",
-                            "percentile": 99,
-                            "type": "LINE",
-                            "entityType": "SERVICE",
-                            "dimensions": [],
-                            "sortAscending": false,
-                            "sortColumn": true
-                        }
-                    ],
-                    "resultMetadata": {}
-                },
-                "filtersPerEntityType": {}
-            }
-        },
-        {
-            "name": "Custom chart",
-            "tileType": "CUSTOM_CHARTING",
-            "configured": true,
-            "bounds": {
-                "top": 38,
-                "left": 2318,
-                "width": 380,
-                "height": 304
-            },
-            "tileFilter": {
-                "managementZone": null
-            },
-            "filterConfig": {
-                "type": "MIXED",
-                "customName": "Number of calls without  HTTP 5xx errors",
-                "defaultName": "Custom chart",
-                "chartConfig": {
-                    "type": "TOP_LIST",
-                    "series": [
-                        {
-                            "metric": "builtin:service.errors.fivexx.successCount",
-                            "aggregation": "NONE",
-                            "percentile": null,
-                            "type": "LINE",
-                            "entityType": "SERVICE",
-                            "dimensions": [],
-                            "sortAscending": false,
-                            "sortColumn": true
-                        }
-                    ],
-                    "resultMetadata": {}
-                },
-                "filtersPerEntityType": {}
-            }
-        },
-        {
-            "name": "Custom chart",
-            "tileType": "CUSTOM_CHARTING",
-            "configured": true,
-            "bounds": {
-                "top": 418,
-                "left": 2318,
-                "width": 380,
-                "height": 304
-            },
-            "tileFilter": {
-                "managementZone": null
-            },
-            "filterConfig": {
-                "type": "MIXED",
-                "customName": "Number of HTTP 5xx errors",
-                "defaultName": "Custom chart",
-                "chartConfig": {
-                    "type": "TOP_LIST",
-                    "series": [
-                        {
-                            "metric": "builtin:service.errors.fivexx.count",
-                            "aggregation": "NONE",
-                            "percentile": null,
-                            "type": "LINE",
-                            "entityType": "SERVICE",
-                            "dimensions": [],
-                            "sortAscending": false,
-                            "sortColumn": true
-                        }
-                    ],
-                    "resultMetadata": {}
-                },
-                "filtersPerEntityType": {}
-            }
-        },
-        {
-            "name": "Custom chart",
-            "tileType": "CUSTOM_CHARTING",
-            "configured": true,
-            "bounds": {
-                "top": 798,
-                "left": 2318,
-                "width": 380,
-                "height": 304
-            },
-            "tileFilter": {
-                "managementZone": null
-            },
-            "filterConfig": {
-                "type": "MIXED",
-                "customName": "Key Requests - Average Method response time",
-                "defaultName": "Custom chart",
-                "chartConfig": {
-                    "type": "TOP_LIST",
-                    "series": [
-                        {
-                            "metric": "builtin:service.keyRequest.response.time",
-                            "aggregation": "AVG",
-                            "percentile": null,
-                            "type": "LINE",
-                            "entityType": "SERVICE_KEY_REQUEST",
-                            "dimensions": [],
-                            "sortAscending": false,
-                            "sortColumn": true
-                        }
-                    ],
-                    "resultMetadata": {}
-                },
-                "filtersPerEntityType": {}
-            }
-        },
-        {
-            "name": "Custom chart",
-            "tileType": "CUSTOM_CHARTING",
-            "configured": true,
-            "bounds": {
-                "top": 1102,
-                "left": 2318,
-                "width": 380,
-                "height": 304
-            },
-            "tileFilter": {
-                "managementZone": null
-            },
-            "filterConfig": {
-                "type": "MIXED",
-                "customName": "Key Requests - 99th% Method response time",
-                "defaultName": "Custom chart",
-                "chartConfig": {
-                    "type": "TOP_LIST",
-                    "series": [
-                        {
-                            "metric": "builtin:service.keyRequest.response.time",
-                            "aggregation": "PERCENTILE",
-                            "percentile": 99,
-                            "type": "LINE",
-                            "entityType": "SERVICE_KEY_REQUEST",
-                            "dimensions": [],
-                            "sortAscending": false,
-                            "sortColumn": true
-                        }
-                    ],
-                    "resultMetadata": {}
-                },
-                "filtersPerEntityType": {}
-            }
+            "filtersPerEntityType": {}
         }
-    ]
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1140,
+            "width": 342,
+            "height": 380
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Request count",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:service.requestCount.total",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 1482,
+            "width": 342,
+            "height": 380
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Number of any errors",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:service.errors.total.count",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 0,
+            "width": 1140,
+            "height": 380
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Number of any errors",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:service.errors.total.count",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 950,
+            "left": 0,
+            "width": 1140,
+            "height": 380
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Average Response time",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:service.response.time",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 950,
+            "left": 1140,
+            "width": 342,
+            "height": 380
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Average Response time",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:service.response.time",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1482,
+            "width": 342,
+            "height": 380
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Number of calls without  any errors",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:service.errors.total.successCount",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 1140,
+            "width": 342,
+            "height": 380
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Failure rate (any  errors)",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:service.errors.total.rate",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 950,
+            "left": 1482,
+            "width": 342,
+            "height": 380
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Average Server side response time",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:service.response.server",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Volume",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Errors",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 0,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Response Time",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 912,
+            "left": 0,
+            "width": 304,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1330,
+            "left": 0,
+            "width": 1140,
+            "height": 380
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "99th% Response time",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:service.response.time",
+                    "aggregation": "PERCENTILE",
+                    "percentile": 99,
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1330,
+            "left": 1140,
+            "width": 342,
+            "height": 380
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "99th% Response time",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:service.response.time",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1330,
+            "left": 1482,
+            "width": 342,
+            "height": 380
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "99th% Server side response time",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:service.response.server",
+                    "aggregation": "PERCENTILE",
+                    "percentile": 99,
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1824,
+            "width": 342,
+            "height": 380
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Number of calls without  HTTP 5xx errors",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:service.errors.fivexx.successCount",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 494,
+            "left": 1824,
+            "width": 342,
+            "height": 380
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Number of HTTP 5xx errors",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:service.errors.fivexx.count",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "SERVICE",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 950,
+            "left": 1824,
+            "width": 342,
+            "height": 380
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Key Requests - Average Method response time",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:service.keyRequest.response.time",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "SERVICE_KEY_REQUEST",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service_method",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1330,
+            "left": 1824,
+            "width": 342,
+            "height": 380
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Key Requests - 99th% Method response time",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:service.keyRequest.response.time",
+                    "aggregation": "PERCENTILE",
+                    "percentile": 99,
+                    "type": "LINE",
+                    "entityType": "SERVICE_KEY_REQUEST",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.service_method",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }]
 }
