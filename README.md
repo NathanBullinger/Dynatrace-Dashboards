@@ -9,7 +9,7 @@ Dynatrace Data Explorer Docs: https://www.dynatrace.com/support/help/shortlink/e
 
 ### Monitoring Overview Dashboard
 
-A high-level monitoring dashboard containing a variety of "essential" metrics.
+A high-level monitoring dashboard containing a variety of commonly used metrics.
 
 ![Overview](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Images/Header.png)
 
@@ -22,11 +22,8 @@ A high-level monitoring dashboard containing a variety of "essential" metrics.
 ![Database Health](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Images/Database%20Health.png)
 
 
-
-
-
-
-
 ### Monitoring Overview Dashboard w/ Synthetic
+
+Identical to Monitoring Overview, with the addition of synthetic monitoring information
 
 ### PaaS Application Overview Dashboard
