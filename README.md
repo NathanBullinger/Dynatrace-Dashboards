@@ -20,6 +20,10 @@ A high-level monitoring dashboard containing a variety of commonly used metrics.
 
 ### Monitoring Overview Dashboard w/ Synthetic
 
-Identical to Monitoring Overview, with the addition of synthetic monitoring information
+Identical to Monitoring Overview, with the addition of synthetic HTTP monitor information
+
 
 ### PaaS Application Overview Dashboard
+
+Identical to Monitoring Overview, with a non-operational focus on PaaS application health (i.e. no Host Health)
+
