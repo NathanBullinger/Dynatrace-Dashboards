@@ -27,3 +27,7 @@ Identical to Monitoring Overview, with the addition of synthetic HTTP monitor in
 
 Identical to Monitoring Overview, with a non-operational focus on PaaS application health (i.e. no Host Health)
 
+
+### PaaS Application Overview Dashboard w/ Synthetic
+
+Identical to PaaS Application Overview, with the addition of synthetic HTTP monitor information
