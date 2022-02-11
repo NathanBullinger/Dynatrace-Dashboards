@@ -2,7 +2,7 @@
 
 This repository contains JSON files used to populate dashboards via API call or manual import. To import a dashboard via the UI, navigate to the 'Dashboards' page in your Dynatrace tenant and select 'Import Dashboard'. Management Zones are the recommended approach for filtering. 
 
-Dynatrace API Docs: https://www.dynatrace.com/support/help/shortlink/section-api
+Dynatrace Dashboard API Docs: https://www.dynatrace.com/support/help/shortlink/api-config-dashboards
 
 Dynatrace Data Explorer Docs: https://www.dynatrace.com/support/help/shortlink/explorer
 
