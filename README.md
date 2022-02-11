@@ -22,6 +22,9 @@ A high-level monitoring dashboard containing a variety of commonly used metrics.
 
 Identical to Monitoring Overview, with the addition of synthetic HTTP monitor information
 
+![Synthetic Overview](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Images/On-prem%20App%20with%20Synthetic%20-%20Overview.png)
+
+![Synthetic Overview](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Images/On-prem%20App%20with%20Synthetic%20-%20Details.png)
 
 ### PaaS Application Overview Dashboard
 
