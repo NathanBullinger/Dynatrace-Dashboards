@@ -35,6 +35,7 @@ Identical to Monitoring Overview, with a non-operational focus on PaaS applicati
 
 Identical to PaaS Application Overview, with the addition of synthetic HTTP monitor information
 
+
 ### AWS Missing Permissions
 
 Summary of Missing AWS Permissions that may prevent metric capture by Dynatrace. Use to...
