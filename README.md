@@ -31,3 +31,9 @@ Identical to Monitoring Overview, with a non-operational focus on PaaS applicati
 ### PaaS Application Overview Dashboard w/ Synthetic
 
 Identical to PaaS Application Overview, with the addition of synthetic HTTP monitor information
+
+### AWS Missing Permissions
+
+Summary of Missing AWS Permissions that may affect the metrics captured by Dynatrace. Use to quickly find any accounts that have missing data, or to validate that existing accounts have the appropriate permission level
+
+
