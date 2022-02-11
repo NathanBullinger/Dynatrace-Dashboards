@@ -46,3 +46,10 @@ Summary of Missing AWS Permissions that may prevent metric capture by Dynatrace.
  4. track any new missing permissions due to changes within AWS, or if new permissions are required for monitoring purposes
 
 ![AWS Missing Permissions](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Images/AWS%20Missing%20Permissions.png)
+
+
+### ActiveGate Health
+
+Summary of ActiveGate health, including messages dropped/recieved, Network statistics, JVM/System CPU + Memory usage, and Extension/Synthetic engine health. 
+
+![AG Health](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Images/ActiveGate%20Health.png)
