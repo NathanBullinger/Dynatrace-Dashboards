@@ -36,4 +36,4 @@ Identical to PaaS Application Overview, with the addition of synthetic HTTP moni
 
 Summary of Missing AWS Permissions that may affect the metrics captured by Dynatrace. Use to quickly find any accounts that have missing data, or to validate that existing accounts have the appropriate permission level
 
-
+![AWS Missing Permissions](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Images/AWS%20Missing%20Permissions.png)
