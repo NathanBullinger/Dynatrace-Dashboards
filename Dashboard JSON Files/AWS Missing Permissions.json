@@ -116,7 +116,7 @@
       "bounds": {
         "top": 190,
         "left": 646,
-        "width": 532,
+        "width": 608,
         "height": 608
       },
       "tileFilter": {},
@@ -212,7 +212,7 @@
       "bounds": {
         "top": 836,
         "left": 646,
-        "width": 532,
+        "width": 608,
         "height": 608
       },
       "tileFilter": {},
@@ -328,7 +328,7 @@
       "markdown": "⮎ Dynatrace Documentation: [Set up AWS monitoring](https://www.dynatrace.com/support/help/shortlink/aws)\n\n⮎ Dynatrace Documentation: [ AWS supporting services](https://www.dynatrace.com/support/help/shortlink/aws-supporting-services-hub)"
     },
     {
-      "name": "Links",
+      "name": "Tenant Links",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
@@ -340,13 +340,13 @@
       "tileFilter": {}
     },
     {
-      "name": "ActiveGates with Missing Permissions",
+      "name": "ActiveGates with Missing Permissions by Working Mode",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
         "top": 1482,
         "left": 646,
-        "width": 532,
+        "width": 608,
         "height": 608
       },
       "tileFilter": {},
@@ -360,6 +360,115 @@
           "splitBy": [
             "host.name",
             "dt.active_gate.working_mode"
+          ],
+          "filterBy": {
+            "nestedFilters": [],
+            "criteria": []
+          },
+          "limit": 100,
+          "foldTransformation": "TOTAL",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "TABLE",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "A:",
+            "properties": {
+              "color": "DEFAULT",
+              "seriesType": "LINE",
+              "alias": "Attempts"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "displayName": "",
+            "visible": true
+          },
+          "yAxes": [
+            {
+              "displayName": "",
+              "visible": true,
+              "min": "AUTO",
+              "max": "AUTO",
+              "position": "LEFT",
+              "queryIds": [
+                "A"
+              ],
+              "defaultAxis": true
+            }
+          ]
+        },
+        "heatmapSettings": {},
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "columnId": "Active Gate - Aws - Missing Permissions",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        }
+      },
+      "queriesSettings": {
+        "resolution": ""
+      }
+    },
+    {
+      "name": "External Links",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 456,
+        "width": 304,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "ActiveGates with Missing Permissions by Integration",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 2128,
+        "left": 646,
+        "width": 608,
+        "height": 608
+      },
+      "tileFilter": {},
+      "customName": "Data explorer results",
+      "queries": [
+        {
+          "id": "A",
+          "metric": "dsfm:active_gate.aws.missing_permissions",
+          "spaceAggregation": "SUM",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [
+            "host.name",
+            "credentials.name"
           ],
           "filterBy": {
             "nestedFilters": [],
