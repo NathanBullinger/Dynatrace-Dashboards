@@ -53,3 +53,11 @@ Summary of Missing AWS Permissions that may prevent metric capture by Dynatrace.
 Summary of ActiveGate health, including messages dropped/recieved, Network statistics, JVM/System CPU + Memory usage, and Extension/Synthetic engine health. 
 
 ![ActiveGate Health](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Images/ActiveGateHealth.png)
+
+### HTTP Monitor Overview
+
+Summary of HTTP monitor health
+
+
+
+
