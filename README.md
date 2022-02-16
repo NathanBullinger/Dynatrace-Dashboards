@@ -45,6 +45,8 @@ Summary of Missing AWS Permissions that may prevent metric capture by Dynatrace.
  3. validate that accounts have the appropriate permission level
  4. track any new missing permissions due to changes within AWS, or if new permissions are required for monitoring purposes
 
+[Link](https://github.com/NathanBullinger/Dynatrace-Dashboards/blob/master/Dashboard%20JSON%20Files/AWS%20Missing%20Permissions.json)
+
 ![AWS Missing Permissions](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Images/AWS%20Missing%20Permissions.png)
 
 
