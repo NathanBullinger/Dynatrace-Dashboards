@@ -67,7 +67,7 @@ Summary of ActiveGate health, including messages dropped/recieved, Network stati
 
 Summary of HTTP monitor health, featuring standard availability and response time metrics
 
-[Link]()
+[Link](https://github.com/NathanBullinger/Dynatrace-Dashboards/blob/master/Dashboard%20JSON%20Files/HTTP%20Monitor%20Overview.json)
 
 ![HTTP Monitor 1](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Images/HTTP%20Monitor%20Overview%201.png)
 ![HTTP Monitor 2](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Images/HTTP%20Monitor%20Overview%202.png)
