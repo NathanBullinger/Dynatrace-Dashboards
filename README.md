@@ -13,7 +13,7 @@ A high-level monitoring dashboard containing a variety of commonly used metrics.
 
 [Link](https://github.com/NathanBullinger/Dynatrace-Dashboards/blob/master/Dashboard%20JSON%20Files/On-premise%20Application.json)
 
-![Overview](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Images/Header.png)
+![Overview](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Images/On-prem%20App.png)
 ![Host Health](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Images/Host%20Health.png)
 ![Service Health](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Images/Service%20Health.png)
 ![Process Health](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Images/Process%20Health.png)
