@@ -41,6 +41,21 @@ Identical to PaaS Application Overview, with the addition of synthetic HTTP moni
 
 [Link](https://github.com/NathanBullinger/Dynatrace-Dashboards/blob/master/Dashboard%20JSON%20Files/PaaS%20Application%20with%20HTTP%20Monitor.json)
 
+### HTTP Monitor Overview
+
+Summary of HTTP monitor health, featuring standard availability and response time metrics
+
+[Link](https://github.com/NathanBullinger/Dynatrace-Dashboards/blob/master/Dashboard%20JSON%20Files/HTTP%20Monitor%20Overview.json)
+
+![HTTP Monitor 1](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Images/HTTP%20Monitor%20Overview%201.png)
+![HTTP Monitor 2](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Images/HTTP%20Monitor%20Overview%202.png)
+
+### Dynatrace Server Statistics
+
+[Link](https://github.com/NathanBullinger/Dynatrace-Dashboards/blob/master/Dashboard%20JSON%20Files/Dynatrace%20Server%20Statistics.json)
+
+![Server Statistics](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Images/Server%20Statistics.png)
+
 ### AWS Missing Permissions
 
 Summary of Missing AWS Permissions that may prevent metric capture by Dynatrace. Use to...
@@ -63,11 +78,3 @@ Summary of ActiveGate health, including messages dropped/recieved, Network stati
 
 ![ActiveGate Health](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Images/ActiveGateHealth.png)
 
-### HTTP Monitor Overview
-
-Summary of HTTP monitor health, featuring standard availability and response time metrics
-
-[Link](https://github.com/NathanBullinger/Dynatrace-Dashboards/blob/master/Dashboard%20JSON%20Files/HTTP%20Monitor%20Overview.json)
-
-![HTTP Monitor 1](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Images/HTTP%20Monitor%20Overview%201.png)
-![HTTP Monitor 2](https://raw.githubusercontent.com/NathanBullinger/Dynatrace-Dashboards/master/Dashboard%20Images/HTTP%20Monitor%20Overview%202.png)
