@@ -6,6 +6,8 @@ Dynatrace Dashboard API Docs: https://www.dynatrace.com/support/help/shortlink/a
 
 Dynatrace Data Explorer Docs: https://www.dynatrace.com/support/help/shortlink/explorer
 
+![Download All - ZIP](https://github.com/NathanBullinger/Dynatrace-Dashboards/archive/refs/heads/master.zip)
+
 
 ### Monitoring Overview Dashboard
 
