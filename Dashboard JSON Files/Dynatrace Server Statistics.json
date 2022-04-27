@@ -1,10 +1,5 @@
 {
-  "metadata": {
-    "configurationVersions": [
-      1
-    ],
-    "clusterVersion": ""
-  },
+  "metadata": {},
   "id": "",
   "dashboardMetadata": {
     "name": "Dynatrace Server Statistics",
@@ -15,7 +10,6 @@
   "tiles": [
     {
       "name": "Service calls received/processed + % Processed",
-      "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -149,136 +143,7 @@
       }
     },
     {
-      "name": "Service calls received/processed + % Processed",
-      "nameSize": "",
-      "tileType": "DATA_EXPLORER",
-      "configured": true,
-      "bounds": {
-        "top": 418,
-        "left": 912,
-        "width": 608,
-        "height": 380
-      },
-      "tileFilter": {},
-      "customName": "Data explorer results",
-      "queries": [
-        {
-          "id": "B",
-          "timeAggregation": "DEFAULT",
-          "splitBy": [],
-          "metricSelector": "dsfm:server.service_calls.received:splitBy():avg:auto:sort(value(avg,descending)):limit(10)",
-          "enabled": true
-        },
-        {
-          "id": "C",
-          "timeAggregation": "DEFAULT",
-          "splitBy": [],
-          "metricSelector": "dsfm:server.service_calls.processed:splitBy():avg:auto:sort(value(avg,descending)):limit(10)",
-          "enabled": true
-        },
-        {
-          "id": "D",
-          "timeAggregation": "DEFAULT",
-          "splitBy": [],
-          "metricSelector": "dsfm:server.service_calls.persisted:splitBy():avg:auto:sort(value(avg,descending)):limit(10)",
-          "enabled": true
-        },
-        {
-          "id": "E",
-          "timeAggregation": "DEFAULT",
-          "splitBy": [],
-          "metricSelector": "100*(dsfm:server.service_calls.processed:splitBy():avg:auto:sort(value(avg,descending)):limit(10)) / (dsfm:server.service_calls.received:splitBy():avg:auto:sort(value(avg,descending)):limit(10))",
-          "enabled": true
-        }
-      ],
-      "visualConfig": {
-        "type": "TABLE",
-        "global": {
-          "hideLegend": false
-        },
-        "rules": [
-          {
-            "matcher": "B:",
-            "valueFormat": "auto",
-            "properties": {
-              "color": "DEFAULT",
-              "seriesType": "LINE",
-              "alias": "Received"
-            },
-            "seriesOverrides": []
-          },
-          {
-            "matcher": "C:",
-            "valueFormat": "auto",
-            "properties": {
-              "color": "DEFAULT",
-              "seriesType": "LINE",
-              "alias": "Processed"
-            },
-            "seriesOverrides": []
-          },
-          {
-            "matcher": "D:",
-            "valueFormat": "auto",
-            "properties": {
-              "color": "DEFAULT",
-              "seriesType": "LINE",
-              "alias": "Persisted"
-            },
-            "seriesOverrides": []
-          },
-          {
-            "matcher": "E:",
-            "valueFormat": "auto",
-            "properties": {
-              "color": "DEFAULT",
-              "seriesType": "LINE",
-              "alias": "% Processed"
-            },
-            "seriesOverrides": []
-          }
-        ],
-        "axes": {
-          "xAxis": {
-            "visible": true
-          },
-          "yAxes": []
-        },
-        "heatmapSettings": {},
-        "thresholds": [
-          {
-            "axisTarget": "LEFT",
-            "columnId": "Server - Service Calls - Processed",
-            "rules": [
-              {
-                "color": "#7dc540"
-              },
-              {
-                "color": "#f5d30f"
-              },
-              {
-                "color": "#dc172a"
-              }
-            ],
-            "queryId": "",
-            "visible": true
-          }
-        ],
-        "tableSettings": {
-          "isThresholdBackgroundAppliedToCell": false
-        },
-        "graphChartSettings": {
-          "connectNulls": false
-        },
-        "honeycombSettings": {}
-      },
-      "queriesSettings": {
-        "resolution": ""
-      }
-    },
-    {
       "name": "Code-level Data Retention",
-      "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -367,7 +232,6 @@
     },
     {
       "name": "RUM Data Retention",
-      "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -456,7 +320,6 @@
     },
     {
       "name": "Service Data Retention",
-      "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -545,7 +408,6 @@
     },
     {
       "name": "Synthetic Data Retention",
-      "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -634,7 +496,6 @@
     },
     {
       "name": "Management Zone Configs",
-      "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -719,7 +580,6 @@
     },
     {
       "name": "Configurations",
-      "nameSize": "",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
@@ -732,7 +592,6 @@
     },
     {
       "name": "Data Retention",
-      "nameSize": "",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
@@ -745,7 +604,6 @@
     },
     {
       "name": "Service Calls",
-      "nameSize": "",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
@@ -758,7 +616,6 @@
     },
     {
       "name": "Auto-Tag Configs",
-      "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -843,7 +700,6 @@
     },
     {
       "name": "Session Replay Data Retention",
-      "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -932,7 +788,6 @@
     },
     {
       "name": "Incoming Logs and Events",
-      "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -1027,7 +882,6 @@
     },
     {
       "name": "Incoming Logs and Events",
-      "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -1127,7 +981,6 @@
     },
     {
       "name": "Incoming Events by Sender",
-      "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -1226,7 +1079,6 @@
     },
     {
       "name": "Incoming Events by Type",
-      "nameSize": "",
       "tileType": "DATA_EXPLORER",
       "configured": true,
       "bounds": {
@@ -1325,7 +1177,6 @@
     },
     {
       "name": "Markdown",
-      "nameSize": "",
       "tileType": "MARKDOWN",
       "configured": true,
       "bounds": {
@@ -1339,7 +1190,6 @@
     },
     {
       "name": "External Links",
-      "nameSize": "",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
@@ -1352,7 +1202,6 @@
     },
     {
       "name": "Events",
-      "nameSize": "",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
@@ -1362,6 +1211,330 @@
         "height": 38
       },
       "tileFilter": {}
+    },
+    {
+      "name": "Service calls received",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 418,
+        "left": 912,
+        "width": 304,
+        "height": 190
+      },
+      "tileFilter": {},
+      "customName": "Data explorer results",
+      "queries": [
+        {
+          "id": "B",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "dsfm:server.service_calls.received:splitBy():avg:auto:sort(value(avg,descending)):limit(10)",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "SINGLE_VALUE",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "B:",
+            "valueFormat": "auto",
+            "properties": {
+              "color": "DEFAULT",
+              "seriesType": "LINE",
+              "alias": "Received"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {},
+        "singleValueSettings": {
+          "showTrend": false,
+          "showSparkLine": true,
+          "linkTileColorToThreshold": true
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "columnId": "Server - Service Calls - Received",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "B",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
+      },
+      "queriesSettings": {
+        "resolution": ""
+      }
+    },
+    {
+      "name": "Service calls processed",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 418,
+        "left": 1216,
+        "width": 304,
+        "height": 190
+      },
+      "tileFilter": {},
+      "customName": "Data explorer results",
+      "queries": [
+        {
+          "id": "C",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "dsfm:server.service_calls.processed:splitBy():avg:auto:sort(value(avg,descending)):limit(10)",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "SINGLE_VALUE",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "C:",
+            "valueFormat": "auto",
+            "properties": {
+              "color": "DEFAULT",
+              "seriesType": "LINE",
+              "alias": "Processed"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {},
+        "singleValueSettings": {
+          "showTrend": false,
+          "showSparkLine": true,
+          "linkTileColorToThreshold": true
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "columnId": "Server - Service Calls - Received",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "B",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
+      },
+      "queriesSettings": {
+        "resolution": ""
+      }
+    },
+    {
+      "name": "Service calls persisted",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 608,
+        "left": 912,
+        "width": 304,
+        "height": 190
+      },
+      "tileFilter": {},
+      "customName": "Data explorer results",
+      "queries": [
+        {
+          "id": "D",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "dsfm:server.service_calls.persisted:splitBy():avg:auto:sort(value(avg,descending)):limit(10)",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "SINGLE_VALUE",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "D:",
+            "valueFormat": "auto",
+            "properties": {
+              "color": "DEFAULT",
+              "seriesType": "LINE",
+              "alias": "Persisted"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {},
+        "singleValueSettings": {
+          "showTrend": false,
+          "showSparkLine": true,
+          "linkTileColorToThreshold": true
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "columnId": "Server - Service Calls - Received",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "B",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
+      },
+      "queriesSettings": {
+        "resolution": ""
+      }
+    },
+    {
+      "name": "% Processed",
+      "tileType": "DATA_EXPLORER",
+      "configured": true,
+      "bounds": {
+        "top": 608,
+        "left": 1216,
+        "width": 304,
+        "height": 190
+      },
+      "tileFilter": {},
+      "customName": "Data explorer results",
+      "queries": [
+        {
+          "id": "E",
+          "timeAggregation": "DEFAULT",
+          "splitBy": [],
+          "metricSelector": "(100*(dsfm:server.service_calls.processed:splitBy():avg:auto:sort(value(avg,descending)):limit(10)) / (dsfm:server.service_calls.received:splitBy():avg:auto:sort(value(avg,descending)):limit(10))):setUnit(Percent)",
+          "enabled": true
+        }
+      ],
+      "visualConfig": {
+        "type": "SINGLE_VALUE",
+        "global": {
+          "hideLegend": false
+        },
+        "rules": [
+          {
+            "matcher": "E:",
+            "valueFormat": "auto",
+            "properties": {
+              "color": "DEFAULT",
+              "seriesType": "LINE",
+              "alias": "% Processed"
+            },
+            "seriesOverrides": []
+          }
+        ],
+        "axes": {
+          "xAxis": {
+            "visible": true
+          },
+          "yAxes": []
+        },
+        "heatmapSettings": {},
+        "singleValueSettings": {
+          "showTrend": false,
+          "showSparkLine": false,
+          "linkTileColorToThreshold": true
+        },
+        "thresholds": [
+          {
+            "axisTarget": "LEFT",
+            "columnId": "100*(dsfm:server.service_calls.processed:splitBy():avg:auto:sort(value(avg,descending)):limit(10))/(dsfm:server.service_calls.received:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):setUnit(Percent)",
+            "rules": [
+              {
+                "color": "#7dc540"
+              },
+              {
+                "color": "#f5d30f"
+              },
+              {
+                "color": "#dc172a"
+              }
+            ],
+            "queryId": "E",
+            "visible": true
+          }
+        ],
+        "tableSettings": {
+          "isThresholdBackgroundAppliedToCell": false
+        },
+        "graphChartSettings": {
+          "connectNulls": false
+        },
+        "honeycombSettings": {}
+      },
+      "queriesSettings": {
+        "resolution": ""
+      }
     }
   ]
 }
